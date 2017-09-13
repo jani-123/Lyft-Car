@@ -8,7 +8,7 @@
 }
 .dropdown-menu {
     top: 35px;
-    width: 30em;
+    width: 27.3em;
 }
 .dropdown{
     background-position: center;
@@ -25,15 +25,22 @@
 .texto{
     text-align: center;
 }
-/* .menu{
-    border: 5px solid #BEBDBD;
-    border-radius: 10px;
+#siguiente{ 
     position: absolute;
-    top: 150px;
-    height: 300px;
-} */
-#siguiente{
-    position: absolute;
-    top: 100px;
+    top: 140px; 
     left: 250px;
+    background-color: #05A1AC;
+}
+#codigo{
+    position: absolute;
+    top: 140px;
+    background-color: #05A1AC;
+}
+#muestraCodigo p{
+    font-size: 2em;
+    color: #05A1AC;
+    text-align: center;
+}
+#muestraCodigo{
+    margin-top: 100px;
 }

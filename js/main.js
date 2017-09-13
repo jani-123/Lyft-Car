@@ -1,25 +1,21 @@
 'use strict';
-var mapas = {
+var cambioVistas = {
     init: function(){
-        mapas.setup();
+        cambioVistas.setup();
     },
     setup: function(){
-        $('#seccion').click(mapas.Seccion);
-        $('#siguiente').click(mapas.Siguiente);
-        $('#mapa').click(mapas.mapa);
-    },
+        $('#seccion').click(cambioVistas.Seccion);
+        $('#siguiente').click(cambioVistas.Siguiente);
+        $('#mapa').click(cambioVistas.mapa);
+    }, 
     Seccion : function(){
-        alert("sd");
         document.location.href = "C:/LABORATORIA/SPRINT 4/Lyft-Car/sign.html";
     },
     Siguiente : function(){
-        alert("sd");
         document.location.href = "C:/LABORATORIA/SPRINT 4/Lyft-Car/registro.html";
     },
     mapa : function(){
-        alert("sd");
         document.location.href = "C:/LABORATORIA/SPRINT 4/Lyft-Car/mapa.html";
     }
-
-
 }
+$(document).ready(cambioVistas.init);

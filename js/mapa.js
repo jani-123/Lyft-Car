@@ -5,7 +5,7 @@ var mapas = {
         autocompletarOrigen: undefined,
         detalleUbicacionOrigen: undefined,
         autocompletarDestino: undefined,
-        detalleUbicacionDestino:undefined,
+        detalleUbicacionDestino:undefined, 
         Servicio_direccion: undefined, 
         Render_direccion: undefined,
         markerOrigen: undefined,
@@ -104,7 +104,7 @@ var mapas = {
     },
 
     crearMarcador: function(map) {
-        let icono = {
+        let icono = { 
             url: 'http://icons.iconarchive.com/icons/sonya/swarm/128/Bike-icon.png',
             size: new google.maps.Size(71, 71),
             origin: new google.maps.Point(0, 0),
@@ -121,13 +121,14 @@ var mapas = {
     },
 
     dibujarRuta: function (directionsService, directionsDisplay) {
-        //let origin = document.getElementById("origen").value;
+        let origin = document.getElementById("origen").value;
         //let origin = new mapas.buscarMiUbicacion();
+        //let origin = mapas.init.Origen.val();
         let destination = document.getElementById('destino').value;
 
         if (destination != "" && destination != "") {
             directionsService.route({
-                origin: new mapas.buscarMiUbicacion(),
+                origin: origin,
                 destination: destination,
                 travelMode: "DRIVING"
             },
@@ -137,10 +138,11 @@ var mapas = {
                     } else {
                         mapas.funcionErrorRuta();
                     }
+                    // let price_stimated = response.route[0].overview_path.length / 10 + 'USD';
+                
                 });
         }
     },
-
     funcionErrorRuta: function() {
         alert("No ingresaste un origen y un destino validos");
     }

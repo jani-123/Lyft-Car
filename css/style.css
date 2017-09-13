@@ -4,19 +4,17 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     width: 0;
-    height: 600px;
+    height: 660px;
 }
 .logo{
     width: 250px;
-    height: 160px;
+    height: 160px; 
     margin-left: 5em;
 } 
 .botones{
     position: absolute;
     text-align: center;
     margin-top: 25em;
-    /* left: 400px;
-    top: 550px; */
 }
 .botones button{
     color: black;
