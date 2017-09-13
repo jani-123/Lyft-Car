@@ -9,13 +9,13 @@ var cambioVistas = {
         $('#mapa').click(cambioVistas.mapa);
     }, 
     Seccion : function(){
-        document.location.href = "C:/LABORATORIA/SPRINT 4/Lyft-Car/sign.html";
+        document.location.href = "sign.html";
     },
     Siguiente : function(){
-        document.location.href = "C:/LABORATORIA/SPRINT 4/Lyft-Car/registro.html";
+        document.location.href = "registro.html";
     },
     mapa : function(){
-        document.location.href = "C:/LABORATORIA/SPRINT 4/Lyft-Car/mapa.html";
+        document.location.href = "mapa.html";
     }
 }
 $(document).ready(cambioVistas.init);
