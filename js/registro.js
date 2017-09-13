@@ -27,8 +27,7 @@ const registro  = {
 		{
 			let clave = localStorage.key(i);
 			let value = localStorage.getItem(nombre);
-			alert(`<p> ${clave} </p>\
-			                            <p>  ${value} </p>`);
+			alert("Nombre:  ${clave}  Email: ${value}");
 		}
     },
     aceptaCondiciones: function() {
